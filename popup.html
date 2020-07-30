@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>快速搜索小工具</title>
+	<style type="text/css">
+		body, html, table{
+			border:0;
+			margin:0;
+			padding:0;
+			-webkit-user-select:none;
+			text-align: center;
+		}
+		tr{
+			padding:0;
+			margin:0;
+			
+		}
+		td{
+			padding:0;
+		}
+		form {
+			margin:0;
+		}
+		input[type="text"]{
+			-webkit-border-radius:5px;
+			border:0px solid #B8B8BD;
+			height:20px;
+			width:220px;
+			font-size:11pt;
+			outline:none;
+			background-image:url("./img/search.png");
+			background-repeat:no-repeat;
+			padding-left:24px;
+			border:1px solid greenyellow;
+		}
+		div {
+			font: menu;
+			color: black;
+			cursor: default;
+		}
+		a:link {
+			font-size: 12px;
+			color: #000000;
+			text-decoration: none;
+		}
+		a:visited {
+			font-size: 12px;
+			color: #000000;
+			text-decoration: none;
+		}
+		a:hover {
+			font-size: 12px;
+			color: #999999;
+			text-decoration: underline;
+		}
+
+		.title{
+			margin:10px;
+			font-size: 15px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body style="width:350px;min-height:100px;">
+	<div class="title">
+		快捷导航
+	</div>
+	<div>
+		<form><table><tr><td id="query_baidu"><input type="text" value="" id="so_search_baidu" size="30" /></td><td><a target="__black" id="search_baidu">百度一下</a></td></tr></table></form>
+		<hr>
+		<form><table><tr><td id="query_chrome"><input type="text" value="" id="so_search_google" size="30" /></td><td><a target="__black" id="search_google">用谷歌搜索</a></td></tr></table></form>
+	</div>
+	<script type="text/javascript" src="./js/popup.js"></script>
+	<script type="text/javascript" src="./js/jquery.js"></script>
+</body>
+</html>
